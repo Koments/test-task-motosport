@@ -1,0 +1,553 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: bold !important;
+  font-size: 50px !important;
+  margin-bottom: 80px !important;
+}
+
+h2 {
+  color: #aeaeae !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+h3,
+h4 {
+  font-weight: 600 !important;
+  font-size: 30px !important;
+}
+
+h4 {
+  font-size: 25px !important;
+}
+
+h5 {
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+
+h6 {
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  margin-bottom: 0 !important;
+}
+
+.side-button {
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+
+.filter-button {
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+p {
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+span {
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto !important;
+}
+body header {
+  background: url(../images/headerBg.png);
+  height: 686px;
+  color: #f8f8f8;
+  padding: 19px 104px 150px 100px;
+}
+body header .navbar {
+  margin-bottom: 136px;
+}
+body header .navbar .navbar-brand {
+  width: 139px;
+  height: 35px;
+  background: url(../images/logo.png);
+  margin: 0;
+}
+body header .navbar .nav-right-side {
+  margin-top: 6px;
+}
+body header .navbar .nav-right-side .pages-link {
+  width: 283px;
+}
+body header .navbar .nav-right-side .nav-item {
+  height: 35px;
+}
+body header .navbar .nav-right-side .nav-item .fa-facebook-f {
+  width: 9px;
+  height: 18px;
+  margin-left: 25px;
+}
+body header .navbar .nav-right-side .nav-item .fa-instagram {
+  width: 18px;
+  height: 18px;
+  margin-left: 31px;
+}
+body header .header-info-instruction {
+  width: 715px;
+}
+body header .header-info-instruction h1 {
+  margin-bottom: 32px;
+  height: 68px;
+}
+body header .header-info-instruction .header-order {
+  margin-bottom: 72px;
+}
+body header .header-info-instruction .header-order div {
+  width: 295px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20.43px;
+}
+body header .header-info-instruction .header-order div:nth-child(1) {
+  margin-right: 20px;
+}
+body header .header-info-instruction button {
+  border: 2px solid #f8f8f8;
+  border-radius: 15px;
+  width: 240px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: transparent;
+  color: #f8f8f8;
+}
+body header .header-info-instruction button:disabled {
+  opacity: 0.3;
+}
+body header .header-info-instruction button:hover {
+  background: #f8f8f8;
+  color: #000000;
+}
+body header .header-info-instruction button:active {
+  color: #f8f8f8;
+  background-color: transparent;
+}
+body #offers {
+  padding: 98px 100px 100px;
+  background: #f8f8f8;
+}
+body #offers .filter-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 290px;
+  grid-column-gap: 20px;
+}
+body #offers .filter-options .form-select {
+  position: relative;
+}
+body #offers .filter-options .form-select .dropbtn {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  border: none;
+}
+body #offers .filter-options .form-select .dropdown {
+  position: relative;
+}
+body #offers .filter {
+  position: relative;
+}
+body #offers .filter .dropdown-content {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  font-weight: 400;
+  font-size: 13px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 47px;
+  width: 170px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.04);
+  border-right: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid white;
+  grid-template-rows: 1fr;
+  grid-row-gap: 20px;
+  padding-top: 10px;
+}
+body #offers .filter .dropdown-content div {
+  color: black;
+  padding: 0 16px;
+  font-weight: 400;
+  font-size: 13px;
+}
+body #offers .filter .car-param:hover {
+  color: #df4e3c;
+  cursor: pointer;
+}
+body #offers .select-cars-by-param {
+  width: 170px;
+  height: 48px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding-left: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 15px;
+}
+body #offers .select-cars-by-param .form-select:focus {
+  box-shadow: none;
+}
+body #offers .search-result {
+  width: 100%;
+  background: #df4e3c;
+  color: #f8f8f8;
+  border-radius: 15px;
+}
+body #offers .search-result:hover {
+  background: #ffffff;
+  color: #df4e3c;
+  border: 1px solid #df4e3c;
+  cursor: pointer;
+}
+body #offers .search-result:disabled {
+  opacity: 0.3;
+}
+body #offers .cars-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+body #offers .cars-list .car-card {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+}
+body #offers .cars-list .car-card .car-poster {
+  position: relative;
+}
+body #offers .cars-list .car-card .car-poster img {
+  width: 295px;
+  height: 200px;
+}
+body #offers .cars-list .car-card .car-poster .new-car {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 66px;
+  height: 24px;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 400;
+  background-color: #000000;
+  padding: 3px 20px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+body #offers .cars-list .car-card .car-poster .sold-car h2 {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 27%;
+  color: #ffffff !important;
+}
+body #offers .cars-list .car-card .car-info {
+  margin: 20px 20px 35px;
+}
+body #offers .cars-list .car-card .car-info .release-year {
+  margin-right: 8px;
+  color: #8d8d8d;
+}
+body #offers .cars-list .car-card .car-info .machine-characteristics {
+  color: #8d8d8d;
+  margin: 16px 0 26px 0;
+  height: 19px;
+}
+body #offers .cars-list .car-card .car-info .model-name h6 {
+  width: 210px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body #offers .cars-list .car-card .car-info .model-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+body #offers .cars-list .car-card .car-info .vl-container {
+  position: relative;
+  width: 18px;
+}
+body #offers .cars-list .car-card .car-info .vl-container .vl {
+  border-top: 1px solid #8d8d8d;
+  transform: rotate(90deg);
+  width: 20px;
+  top: 12px;
+  position: absolute;
+}
+body #offers .available-vehicles {
+  margin: 24px 0;
+  width: 174px;
+  font-size: 12px;
+}
+body #offers .available-vehicles input {
+  border: 2px solid #8d8d8d;
+  cursor: pointer;
+}
+body #offers .available-vehicles .form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='ffffff' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+body #offers .available-vehicles input:checked {
+  background: #df4e3c;
+  color: #ffffff;
+  border: 2px solid #df4e3c;
+}
+body #offers .available-vehicles .form-check-input:focus {
+  box-shadow: none;
+}
+body #offers .available-vehicles input:checked .checkbox-text {
+  color: #df4e3c;
+}
+body #offers .available-vehicles .checkbox-text {
+  margin-left: 8px;
+}
+body #offers .sort {
+  width: 260px;
+  font-weight: 400;
+  font-size: 12px;
+}
+body #offers .sort .sort-img {
+  width: 12px;
+  margin-left: 17px;
+  position: relative;
+}
+body #offers .sort .sort-img .vector-top {
+  top: -7px;
+  position: absolute;
+}
+body #offers .sort .sort-img .vector-bottom {
+  position: absolute;
+  left: 3px;
+  top: -3px;
+}
+body #offers .sort .sort-img img {
+  width: 6px;
+  height: 8px;
+}
+body #offers .sort #sort-by-param {
+  color: #8d8d8d;
+  width: 191px;
+  background-image: none;
+  padding: 0;
+  font-size: 12px;
+  border-color: #f8f8f8;
+  box-shadow: none;
+  background-color: #f8f8f8;
+  padding-left: 12px;
+}
+body #offers .sort option:hover {
+  color: #df4e3c;
+}
+body #offers .no-matches {
+  display: none;
+  margin: 5% 40%;
+  font-size: 40px;
+}
+body #offers .activ-drop-content {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.04);
+  background-image: none;
+  font-weight: 600;
+  border: 1px solid #c4c4c4;
+}
+body #search-request {
+  color: #f8f8f8;
+  background-color: #000000;
+  padding: 40px 100px;
+}
+body #search-request div:first-child {
+  width: 505px;
+  margin-right: 20px;
+}
+body #search-request form {
+  margin: 20px 0;
+}
+body #search-request .email-fild-container {
+  position: relative;
+}
+body #search-request .email-fild-container input {
+  width: 505px;
+  height: 54px;
+  margin-right: 20px;
+  border: 1px solid #bdbdbd;
+  border-radius: 15px;
+  padding: 17px 16px;
+  background: #000000;
+  color: #f8f8f8;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 13px 50px 12px 16px;
+}
+body #search-request .email-fild-container input:focus::-moz-placeholder {
+  color: transparent;
+}
+body #search-request .email-fild-container input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+body #search-request .email-fild-container input:focus::placeholder {
+  color: transparent;
+}
+body #search-request .email-fild-container .check-mark {
+  color: #507a36;
+  position: absolute;
+  top: 13px;
+  right: 19.5px;
+  display: none;
+}
+body #search-request .email-fild-container .cross {
+  color: #ff2307;
+  position: absolute;
+  top: 13px;
+  right: 19.5px;
+  display: none;
+}
+body #search-request .email-fild-container .error-message {
+  width: 70px;
+  top: 63px;
+  left: 16px;
+  position: absolute;
+  display: none;
+  font-size: 10px !important;
+  font-weight: 400px !important;
+  color: #ff2307;
+}
+body #search-request button {
+  width: 190px;
+  height: 54px;
+  background: #f8f8f8;
+  border-radius: 15px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+body #search-request button:hover {
+  border: 2px solid #f8f8f8;
+  border-radius: 15px;
+  background: #000000;
+  color: #f8f8f8;
+}
+body #search-request button:disabled {
+  opacity: 0.3;
+}
+body #search-request button:active {
+  color: #f8f8f8;
+  background-color: transparent;
+}
+body #questions {
+  background-color: #f8f8f8;
+  padding: 100px 0 150px;
+}
+body #questions .accordion {
+  width: 820px;
+  margin: 0 auto;
+}
+body #questions .accordion .accordion-item {
+  border-bottom: 1px solid #c4c4c4;
+}
+body #questions .accordion .accordion-item .accordion-header {
+  margin-bottom: 0 !important;
+}
+body #questions .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #f8f8f8;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 24px;
+}
+body #questions .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border-color: white;
+  box-shadow: none;
+}
+body #questions .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #df4e3c;
+  padding-bottom: 21px;
+}
+body #questions .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  transform: scale(0.7) !important;
+}
+body #questions .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='red' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+body #questions .accordion .active-accordion-button {
+  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+}
+body #questions .accordion .accordion-collapse {
+  background-color: #ffffff !important;
+}
+body #questions .accordion .active-accordion-button-color {
+  background-color: #ffffff !important;
+  box-shadow: none;
+}
+body #questions .accordion .accordion-body {
+  padding: 0px 72px 16px 24px;
+}
+body #questions .accordion .accordion-body div {
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+body #footer {
+  padding: 37px 104px 37px 80px;
+  background-color: #000000;
+  color: #f8f8f8;
+}
+body #footer img {
+  width: 191px;
+  height: 48px;
+}
+body #footer .footer-network-links {
+  width: 67px;
+}
+body #footer .footer-site-links {
+  width: 293px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.brand-color {
+  color: #df4e3c;
+}
+
+.brand-color-border {
+  border: 1px solid #df4e3c !important;
+  border-radius: 15px !important;
+  font-weight: 400 !important;
+}
+
+.grid {
+  display: grid !important;
+}
+
+select {
+  border-radius: 25px;
+}
+
+select:hover {
+  background-color: gren;
+}
+
+option:hover {
+  background-color: rgb(255, 64, 0) !important;
+}
+
+.display-none {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
