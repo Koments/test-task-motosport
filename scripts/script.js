@@ -10,8 +10,9 @@ $(document).ready(function () {
 });
 
 $(document).on('click', function (e) {
-    if ($(e.target).hasClass("drop") != true || $(e.target).hasClass("sort-by-param")) {
+    if ($(e.target).hasClass("drop") != true) {
         $(".dropdown-content").removeClass("grid");
+        $(".dropdown-content-sort").removeClass("grid");
         $(".form-select").removeClass("activ-drop-content");
     }
 })
@@ -128,6 +129,7 @@ $(".select-by-year").click(function (e) {
 
 $(".select-cars-by-param").click(function () {
     $(".dropdown-content").removeClass("grid");
+    $(".dropdown-content-sort").removeClass("grid");
     $(".select-cars-by-param").removeClass("activ-drop-content");
     $(this).removeClass("brand-color-border");
     $(this.parentElement.children[1]).addClass("grid");
@@ -260,6 +262,8 @@ $(".select-by-mileage").click(function (e) {
 });
 
 $(".sort-param").on('click', function (e) {
+    $('.sort-drop').html($(this).text());
+
     if ($(this).text() === "Price (ascending)") {
         carsStore.sort(function (a, b) {
             const aPrise = a.price.split('$');
@@ -267,7 +271,6 @@ $(".sort-param").on('click', function (e) {
             return Math.round(100 * parseFloat(aPrise[1])) - Math.round(100 * parseFloat(bPrise[1]));
         });
         $('.cars-list').html(``);
-        $('.sort-drop').html($(this).text());
         $(".vector-top").attr("src", "images/Vector-top.png");
         $(".vector-bottom").attr("src", "images/Vector-bottom.png");
         renderCars(carsStore);
@@ -280,7 +283,6 @@ $(".sort-param").on('click', function (e) {
             return Math.round(100 * parseFloat(bPrise[1])) - Math.round(100 * parseFloat(aPrise[1]));
         });
         $('.cars-list').html(``);
-        $('.sort-drop').html($(this).text());
         $(".vector-top").attr("src", "images/Vector-top-revers.png");
         $(".vector-bottom").attr("src", "images/Vector-bottom-revers.png");
         renderCars(carsStore);
@@ -293,7 +295,6 @@ $(".sort-param").on('click', function (e) {
             return Math.round(100 * parseFloat(aPrise[0])) - Math.round(100 * parseFloat(bPrise[0]));
         });
         $('.cars-list').html(``);
-        $('.sort-drop').html($(this).text());
         $(".vector-top").attr("src", "images/Vector-top.png");
         $(".vector-bottom").attr("src", "images/Vector-bottom.png");
         renderCars(carsStore);
@@ -306,7 +307,6 @@ $(".sort-param").on('click', function (e) {
             return Math.round(100 * parseFloat(bPrise[0])) - Math.round(100 * parseFloat(aPrise[0]));
         });
         $('.cars-list').html(``);
-        $('.sort-drop').html($(this).text());
         $(".vector-top").attr("src", "images/Vector-top-revers.png");
         $(".vector-bottom").attr("src", "images/Vector-bottom-revers.png");
         renderCars(carsStore);
